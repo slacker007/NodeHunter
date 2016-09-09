@@ -30,8 +30,8 @@ def main(args):
         else:
             load_d1_data(l, gdb)        
     elif args.allscans:
+        ml = portscans(l)
         if args.scanonly:
-            ml = portscans(l)
             pass
         else:
             load_d3_data(ml, gdb)
