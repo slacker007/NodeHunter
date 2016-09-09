@@ -188,8 +188,8 @@ def load_d3_data(main_list, gdb):
         for i in range(len(item[1])):
             test = check.get(port=item[1][i])
             if (len(test) == 0):
-                print "Adding Port: ", item[1][i]
-                print "Adding Service: ", item[2][i]
+                print "Adding Port: {:<}".format(item[1][i])
+                print "Adding Service: {:<}".format(item[2][i])
                 hport = gdb.nodes.create(port=item[1][i])
                 hservice = gdb.nodes.create(service=item[2][i])
                 ports.add(hport)
@@ -216,7 +216,6 @@ def load_d3_data(main_list, gdb):
                 n_list_of_val = e_node[0]['data']['SERVICES']
                 for val in n_list_of_val: # chk for 'service' in l of svcs
                     if (str(s_val) == str(val)):
-                        print "MATCH..!!!", val, " : ", s_val
                         rel_name = 'Is_Running'
                         n1 = gdb.node[n_id]
                         n2 = gdb.node[s_id]
