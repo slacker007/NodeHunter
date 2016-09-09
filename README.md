@@ -5,15 +5,20 @@ The nodehunter module is a Python based executable that takes advantage of the N
 usage: nodehunter.py [-h] [-n] [-a] [-s]
 
 optional arguments:
-  -h, --help      show this help message and exit
-  -n, --nodes     only perforom node discovery
-  -a, --allscans  perform node, service and port discovery
-  -s, --scanonly  perform scan only and print results to screen. Do not injest
-                  into DB
 
+  -h, --help      show this help message and exit
+  
+  -n, --nodes     only perforom node discovery
+  
+  -a, --allscans  perform node, service and port discovery
+  
+  -s, --scanonly  perform scan only and print results to screen. Do not injest into DB
+  
 <strong>EXAMPLE</strong>
 mercenary@ubuntu:~/nodehunter$ sudo ./nodehunter.py --nodes --scanonly
+
 Please enter a target address/range/CIDR: 192.168.1.0/24
+
 Running arp Scan..
 [+] Found: 192.168.1.1 
 [+] Found: 192.168.1.254 
