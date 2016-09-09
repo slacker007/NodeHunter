@@ -2,7 +2,7 @@
 The nodehunter module is a Python based executable that takes advantage of the NMAP API to perform a field expedient method of interrogating the cyberspace terrain for live nodes, ports, and services. It is loud and meant to provide the most holistic picture of the terrain. The follow types of node discovery are conducted: ARP, TCP SYN, TCP ACK, UDP, SCTP INIT, ICMP Echo Request, ICMP Timestamp Request, ICMP Address Mask Query, and IP Protocol Discovery. When executing with -a it utilizes all of the aforementioned discovery scans, plus a Full TCP Connect Scan of all 65,535 TCP ports of each unique IP, and Service Enumeration on each unique open port.
 
 
-usage: nodehunter.py [-h] [-n] [-a] [-s]
+***usage: nodehunter.py [-h] [-n] [-a] [-s]***
 
 optional arguments:
 
