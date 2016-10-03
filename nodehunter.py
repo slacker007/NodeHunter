@@ -120,7 +120,8 @@ def portscans(targetlist):
     port_svc = nmap.PortScanner()
     for target in targetlist:
         print colored("[+] PERFORMING PORT & SRV SCAN ON: {0}".format(target), 'green')
-        port_svc.scan(hosts=target, arguments='-Pn -n -sT -sV -r -p1-5535 --max-rtt-timeout 10ms')
+	# Modify Line Below to Change Scan Syntax..
+        port_svc.scan(hosts=target, arguments='-Pn -n -sT -sV -r -p1-65535 --max-rtt-timeout 10ms')
         for host in port_svc.all_hosts():
 	    slist = []
             chost = host
