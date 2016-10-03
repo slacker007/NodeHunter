@@ -1,5 +1,5 @@
 #! /usr/bin/env python
-'''This Script is a built in tool that comes with Mercenary-Linux and/or 
+'''This Script is a built-in tool that comes with Mercenary-Linux and/or 
    MercenaryHuntFramework
    created by slacker007 of cybersyndicates
    @real_slacker007
