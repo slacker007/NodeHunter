@@ -18,11 +18,13 @@ def main(args):
     Main() 
     Execution Control
     '''
-    l = discscan(get_target()) # uses nmap api to disover nodes
+    # uses nmap api to disover nodes
+    l = discscan(get_target())
     if args.scanonly:
         pass
     else:
-        gdb = create_session() # establishes communication & session w/ db
+	# establishes communication & session w/ db
+        gdb = create_session()
 
     if args.nodes:
         if args.scanonly:
